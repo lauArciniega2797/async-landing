@@ -6,7 +6,7 @@
         <script src="https://cdn.tailwindcss.com"></script> <!-- Uso del tailwind -->
     </head>
 
-    <body>
+    <body class="select-none">
         <div class="relative bg-white overflow-hidden">
             <div class="max-w-7xl mx-auto">
                 <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -25,9 +25,9 @@
                                     </div>
                                 </div>
                                 <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                                    <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About</a>
-                                    <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Proyect</a>
-                                    <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
+                                    <a href="#about" class="font-medium text-gray-500 hover:text-gray-900">About</a>
+                                    <a href="#allphotos" class="font-medium text-gray-500 hover:text-gray-900">Photos</a>
+                                    <a href="#contact" class="font-medium text-gray-500 hover:text-gray-900">Contact</a>
                                 </div>
                             </nav>
                         </div>
@@ -47,32 +47,46 @@
                 </div>
             </div>
             <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="src/assets/img/caballo.jpg" alt="https://unsplash.com/es/@hayek5?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash | Hendrik Schuette">
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" id="principal_photo">
             </div>
         </div>
-        <div class="bg-white">
-            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="bg-white" id="allphotos">
+            <div class="max-w-2xl mx-auto p y-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                 <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">
-                    Last YouTube Videos
+                    Last Photos
                 </h2>
-                <div
-                    class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                    <!-- content -->
-                    <div class="group relative">
-                        <div class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
-                            <img src="" alt="" class="w-full"/>
-                        </div>
-                        <div class="mt-4 flex justify-between">
-                            <h3 class="text-sm text-gray-700">
-                                <span aria-hidden="true" class="absolute inset-0"></span>
-                                title
-                            </h3>
-                        </div>
+                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="group_last_photos"></div>
+            </div>
+        </div>
+        <div class="bg-white" id="about">
+            <div class="max-w-2xl mx-auto p y-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">
+                    About
+                </h2>
+                <div class="mt-6 grid grid-cols-2 gap-y-10 gap-x-6 xl:gap-x-8">
+                    <img class="h-40 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" id="about_photo">
+                    <div>
+                        <h3 class="font-bold">Hi!, I'm Laura Arciniega Roque 🤙</h3>
+                        <br>
+                            In this course's project I'm Learning Tailwind CSS. I'm very amazed of saw how this framework works, is so easy to understand and makes more fast the designs of my web pages. </br>
+                            </br>
+                            I been Frontend Developer since 4 years ago and I have 6 months being FullStack Jr. I know MySQL but I'm not expert on that, I just used it to consult the data that I want, that is another technology that I want to learn deeper. I don't know what more can I write, I just goint to write some more words to can get a long text in the section "About me"</br>
+                            </br>
+                            Here is more text. In another ocassion I will use text from Lorem Impsum, It would be less tired, because I want to write on english but I'm not goot on that and it cost me just a little to translate the spanish paragraph that is on mi mind to this english paragraph. By the way, <b>I'm using Unsplash API</b> to make this page. Well I think is done, bye. ✌️
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-gray-50">
+        <div class="bg-white" id="allphotos">
+            <div class="max-w-2xl mx-auto p y-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">
+                    All Photos
+                </h2>
+                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="group_photos"></div>
+            </div>
+        </div>
+        <div class="bg-gray-50" id="contact">
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                 <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                     <span class="block">Contact</span>
